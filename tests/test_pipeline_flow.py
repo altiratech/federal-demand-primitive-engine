@@ -4,9 +4,9 @@ import json
 from dataclasses import replace
 from pathlib import Path
 
-from pipeline.cluster import cluster_requirement_candidates
+from pipeline.cluster import cluster_requirement_candidates, generate_kernel_label
 from pipeline.config import load_corpus_config
-from pipeline.extract import extract_requirement_candidates
+from pipeline.extract import extract_requirement_candidates, is_excluded_requirement
 from pipeline.models import CorpusDocument
 from pipeline.normalize import build_sections, description_sections
 from pipeline.publish import publish_kernel_artifact
@@ -92,6 +92,36 @@ def test_extract_requirement_candidates_preserves_schema(tmp_path: Path) -> None
     assert payload["family_label"] == "intake / routing"
     assert payload["normalized_text"]
     assert {"candidate_id", "notice_id", "raw_text", "normalized_text", "source_url"} <= set(payload)
+
+
+def test_is_excluded_requirement_filters_contract_admin_noise() -> None:
+    assert is_excluded_requirement("Claims must be submitted to the VA facility that issued the authorization.")
+    assert is_excluded_requirement(
+        "After reviewing SAM information, the Offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212-3 are current."
+    )
+    assert is_excluded_requirement(
+        "The Contractor shall comply with the provisions of this paragraph if this contract was awarded using other than sealed bid and is in excess of the simplified acquisition threshold."
+    )
+    assert not is_excluded_requirement(
+        "Reporting shall include date of occurrence and patient disposition and outcome."
+    )
+
+
+def test_generate_kernel_label_prefers_domain_specific_phrases() -> None:
+    assert (
+        generate_kernel_label(
+            "All medical records concerning the Veteran's care in the CNH shall be readily accessible to VA.",
+            ["all medical records concerning the veteran care in the cnh shall be readily accessible to agency"],
+        )
+        == "Medical Records Accessible To VA"
+    )
+    assert (
+        generate_kernel_label(
+            "Changes in the status of the licensure will be immediately reported to the Department of Veterans Affairs.",
+            ["changes in the status of the licensure will be immediately reported to the agency"],
+        )
+        == "Report Licensure Status Changes"
+    )
 
 
 def test_cluster_requirement_candidates_smoke(tmp_path: Path) -> None:

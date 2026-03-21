@@ -98,49 +98,11 @@
   },
   "counts": {
     "documents": 8,
-    "kernels": 12,
-    "requirement_candidates": 243
+    "kernels": 9,
+    "requirement_candidates": 184
   },
-  "generated_at": "2026-03-21T09:22:38.053707+00:00",
+  "generated_at": "2026-03-21T10:42:12.065115+00:00",
   "kernels": [
-    {
-      "confidence": 0.96,
-      "document_count": 2,
-      "evidence": [
-        {
-          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
-          "posted_date": "2025-10-01",
-          "section_title": "01-36c24725q0806-docx.docx part 85",
-          "snippet_text": "(j) Provider will also submit a copy of claim at the time of submission to authorized VA medical center personnel.",
-          "source_part": "01-36c24725q0806-docx.docx",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
-          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
-        },
-        {
-          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
-          "posted_date": "2025-03-24",
-          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
-          "snippet_text": "(j) Provider will also submit a copy of clai m at the time of submissionto authorized VA medical center personnel.",
-          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
-          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
-        }
-      ],
-      "family_id": "review_approval",
-      "family_label": "review / approval",
-      "kernel_id": "64f5311c675b3401",
-      "label": "Authoriz Agency",
-      "recurrence_count": 9,
-      "representative_requirement": "(j) Provider will also submit a copy of claim at the time of submission to authorized VA medical center personnel.",
-      "top_terms": [
-        "agency",
-        "authoriz",
-        "medical",
-        "center",
-        "personnel",
-        "will"
-      ]
-    },
     {
       "confidence": 0.61,
       "document_count": 2,
@@ -166,10 +128,10 @@
       ],
       "family_id": "review_approval",
       "family_label": "review / approval",
-      "kernel_id": "5d05012c494c73f7",
-      "label": "Requir During",
+      "kernel_id": "3b720b127fb07884",
+      "label": "Prior Authorization For Non-Routine Services",
       "recurrence_count": 3,
-      "representative_requirement": "\u2022 PT, OT and SLP: When PT, OT or SLP therapy is required during days 101+ of a Veteran\u2019s stay, providers must get prior authorization from VA.",
+      "representative_requirement": "High-CostMedication: When a high-cost medication is required during a Veteran\u0092s stay, providers must get prior authorization from VA.",
       "top_terms": [
         "high",
         "when",
@@ -177,44 +139,6 @@
         "during",
         "veteran",
         "stay"
-      ]
-    },
-    {
-      "confidence": 0.61,
-      "document_count": 2,
-      "evidence": [
-        {
-          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
-          "posted_date": "2025-10-01",
-          "section_title": "01-36c24725q0806-docx.docx part 74",
-          "snippet_text": "Claims must be submitted to the VA facility that issued the authorization.",
-          "source_part": "01-36c24725q0806-docx.docx",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
-          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
-        },
-        {
-          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
-          "posted_date": "2025-03-24",
-          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
-          "snippet_text": "Claims must be submitted to the VA facility that issued the authorization.",
-          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
-          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
-        }
-      ],
-      "family_id": "review_approval",
-      "family_label": "review / approval",
-      "kernel_id": "84f403a5fb88bab0",
-      "label": "Must Submitt",
-      "recurrence_count": 3,
-      "representative_requirement": "Claims must be submitted to the VA facility that issued the authorization.",
-      "top_terms": [
-        "must",
-        "submitt",
-        "agency",
-        "facility",
-        "issu",
-        "authorization"
       ]
     },
     {
@@ -242,10 +166,10 @@
       ],
       "family_id": "records_documentation",
       "family_label": "records / documentation",
-      "kernel_id": "b4c013a21a37c55d",
-      "label": "All Medical",
+      "kernel_id": "41be6cceee2c56c6",
+      "label": "Medical Records Accessible To VA",
       "recurrence_count": 3,
-      "representative_requirement": "100% 100% Periodic reviews Positive past performance rating 5 (C)(14) All medical records concerning the veteran's care in the nursing home a) will be readily accessible to VA, and b) within acceptable standards and practice.",
+      "representative_requirement": "All medical records concerning the Veteran\u2019s care in the CNH shall be readily accessible to VA.",
       "top_terms": [
         "all",
         "medical",
@@ -280,8 +204,8 @@
       ],
       "family_id": "review_approval",
       "family_label": "review / approval",
-      "kernel_id": "96532610f1b362ed",
-      "label": "Cnhs Shall",
+      "kernel_id": "11411edde9271fe4",
+      "label": "Provide Preauthorized Clinical Support Services",
       "recurrence_count": 2,
       "representative_requirement": "CNHs shall provide primary medical care, provider visits as needed per month, and specialty consultations, drugs and routine supplies, laboratory, x-ray, and other special services preauthorized by VA.",
       "top_terms": [
@@ -291,44 +215,6 @@
         "primary",
         "medical",
         "care"
-      ]
-    },
-    {
-      "confidence": 0.55,
-      "document_count": 2,
-      "evidence": [
-        {
-          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
-          "posted_date": "2025-10-01",
-          "section_title": "01-36c24725q0806-docx.docx part 41",
-          "snippet_text": "\u2022 Physician services: Providers delivering Federally mandated or separately authorized services shall bill fee-for-service.",
-          "source_part": "01-36c24725q0806-docx.docx",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
-          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
-        },
-        {
-          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
-          "posted_date": "2025-03-24",
-          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
-          "snippet_text": "a.Physician services: Providers delivering federally mandated or separately authorized services shall bill fee-for-service.",
-          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
-          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
-        }
-      ],
-      "family_id": "review_approval",
-      "family_label": "review / approval",
-      "kernel_id": "a6224c11fc57f7f1",
-      "label": "Physician Servic",
-      "recurrence_count": 2,
-      "representative_requirement": "\u2022 Physician services: Providers delivering Federally mandated or separately authorized services shall bill fee-for-service.",
-      "top_terms": [
-        "servic",
-        "physician",
-        "provider",
-        "deliver",
-        "federally",
-        "mandat"
       ]
     },
     {
@@ -356,8 +242,8 @@
       ],
       "family_id": "review_approval",
       "family_label": "review / approval",
-      "kernel_id": "dc559a7494118704",
-      "label": "Escort Servic",
+      "kernel_id": "88ffe55e084e0b86",
+      "label": "Prior Authorization For Escort Services",
       "recurrence_count": 2,
       "representative_requirement": "\u2022 Escort services: When an escort to a medical appointment is indicated, providers must get prior authorization from VA.",
       "top_terms": [
@@ -367,120 +253,6 @@
         "medical",
         "appointment",
         "indicat"
-      ]
-    },
-    {
-      "confidence": 0.55,
-      "document_count": 2,
-      "evidence": [
-        {
-          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
-          "posted_date": "2025-10-01",
-          "section_title": "01-36c24725q0806-docx.docx part 85",
-          "snippet_text": "This is for clinical review and will not delay payment through the automated system.",
-          "source_part": "01-36c24725q0806-docx.docx",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
-          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
-        },
-        {
-          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
-          "posted_date": "2025-03-24",
-          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
-          "snippet_text": "This is for c linical review and will notdelay payment through the autom ated system.",
-          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
-          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
-        }
-      ],
-      "family_id": "review_approval",
-      "family_label": "review / approval",
-      "kernel_id": "0681b4a324f5564d",
-      "label": "Review Will",
-      "recurrence_count": 2,
-      "representative_requirement": "This is for clinical review and will not delay payment through the automated system.",
-      "top_terms": [
-        "review",
-        "will",
-        "payment",
-        "through",
-        "system",
-        "clinical"
-      ]
-    },
-    {
-      "confidence": 0.55,
-      "document_count": 2,
-      "evidence": [
-        {
-          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
-          "posted_date": "2025-10-01",
-          "section_title": "01-36c24725q0806-docx.docx part 143",
-          "snippet_text": "Provider shall not seek to recover or collect from any party, other than VA, any payment or fee arising from Covered Services authorized and provided under to this Contract, including any missed appointment fees or charges.",
-          "source_part": "01-36c24725q0806-docx.docx",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
-          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
-        },
-        {
-          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
-          "posted_date": "2025-03-24",
-          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
-          "snippet_text": "Provider shall not seek to recover orcollect fromany par ty, other than VA, any payment or fee arising from Covered Serv ices authorized and provided under to this Contract, including anymissed appointment fees or charges.",
-          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
-          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
-        }
-      ],
-      "family_id": "review_approval",
-      "family_label": "review / approval",
-      "kernel_id": "b4455248d4a24978",
-      "label": "Provider Shall",
-      "recurrence_count": 2,
-      "representative_requirement": "Provider shall not seek to recover or collect from any party, other than VA, any payment or fee arising from Covered Services authorized and provided under to this Contract, including any missed appointment fees or charges.",
-      "top_terms": [
-        "any",
-        "provider",
-        "shall",
-        "not",
-        "seek",
-        "recover"
-      ]
-    },
-    {
-      "confidence": 0.55,
-      "document_count": 2,
-      "evidence": [
-        {
-          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
-          "posted_date": "2025-10-01",
-          "section_title": "01-36c24725q0806-docx.docx part 221",
-          "snippet_text": "After reviewing SAM information, the Offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212\u20133, Offeror Representations and Certifications\u2014Commercial Products and Commercial Services, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard(s) applicable to the NAICS code(s) referenced for this solicitation), at the time this offer is submitted and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs .",
-          "source_part": "01-36c24725q0806-docx.docx",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
-          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
-        },
-        {
-          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
-          "posted_date": "2025-03-24",
-          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
-          "snippet_text": "After reviewingSAM information, the Offeror verifies bysubmission ofthis offer that the representations and certifications currently posted electronically at FAR 52.212\u00963, Offeror Representations andCertifications\u0097Commercial Products and Commercial Services,have been entered or updated in thelast 12 months, are current, accurate, complete, and applicable tothis solicitation(includingthe business size standard(s)applicabletothe NAICS code(s) referenced forthis solicitation), at the time this offer is submittedand are incorporated inthis offer by reference (see FAR 4.1201), exceptfor paragraphs .",
-          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
-          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
-          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
-        }
-      ],
-      "family_id": "review_approval",
-      "family_label": "review / approval",
-      "kernel_id": "5a7c0721461241db",
-      "label": "Representation Certification",
-      "recurrence_count": 2,
-      "representative_requirement": "After reviewing SAM information, the Offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212\u20133, Offeror Representations and Certifications\u2014Commercial Products and Commercial Services, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard(s) applicable to the NAICS code(s) referenced for this solicitation), at the time this offer is submitted and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs .",
-      "top_terms": [
-        "offer",
-        "contractor",
-        "representation",
-        "far",
-        "commercial",
-        "solicitation"
       ]
     },
     {
@@ -508,10 +280,10 @@
       ],
       "family_id": "reporting_compliance_support",
       "family_label": "reporting / compliance support",
-      "kernel_id": "a9af1e9ebce7910a",
-      "label": "Chang Statu",
+      "kernel_id": "987ab9b4b4c323a6",
+      "label": "Report Licensure Status Changes",
       "recurrence_count": 2,
-      "representative_requirement": "Changes in the status of the licensure will be immediately reported to the Department of Veterans Affairs Atlanta Health Care System and Community Care Department at (404) 521-6260 Ext.",
+      "representative_requirement": "Changes in the status of the licensure will be immediately reported to the OBVAMC VA Home and Community Care Department at 318-393-7031.",
       "top_terms": [
         "department",
         "care",
@@ -546,8 +318,8 @@
       ],
       "family_id": "reporting_compliance_support",
       "family_label": "reporting / compliance support",
-      "kernel_id": "64e4aa2c99e7324c",
-      "label": "Report Shall",
+      "kernel_id": "f3b0131d1d2b323b",
+      "label": "Incident Reporting With Outcome Details",
       "recurrence_count": 2,
       "representative_requirement": "Reporting shall include date of occurrence and patient disposition and outcome.",
       "top_terms": [
@@ -557,6 +329,120 @@
         "date",
         "occurrence",
         "patient"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 64",
+          "snippet_text": "Selected VA staff will be provided access to the CNH electronic health record for each Veteran.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Selected VAstaff will be providedaccess to the CNH electronic health record for each Veteran.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "records_documentation",
+      "family_label": "records / documentation",
+      "kernel_id": "882e38053666be6f",
+      "label": "VA Access To Facility EHR",
+      "recurrence_count": 2,
+      "representative_requirement": "Selected VA staff will be provided access to the CNH electronic health record for each Veteran.",
+      "top_terms": [
+        "select",
+        "will",
+        "cnh",
+        "electronic",
+        "health",
+        "record"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 64",
+          "snippet_text": "Upon discharge or the death of a patient, medical records will be retained by the CNH for a period of at least five (5) years following termination of care.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Upon discharge or the death of a patien t, medical records will be retained bythe CNH for a period of at leas t five (5) years following termination of care.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "records_documentation",
+      "family_label": "records / documentation",
+      "kernel_id": "96bb67785b8d8ae6",
+      "label": "Discharge Death Records Retained For",
+      "recurrence_count": 2,
+      "representative_requirement": "Upon discharge or the death of a patient, medical records will be retained by the CNH for a period of at least five (5) years following termination of care.",
+      "top_terms": [
+        "upon",
+        "discharge",
+        "death",
+        "medical",
+        "record",
+        "will"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Authorization for nursing home care will besubmitted on VA Form 10-7080, \u0093Approved Referral for Medica l Care.\u0094 Each authorization referral period will be noted on the VA Form 10-7080 with a beginning and end date.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        },
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 39",
+          "snippet_text": "VA authorization for nursing home care will be on VA Form 10-7080, \u201cApproved Referral for Medical Care.\u201d Each authorization referral period will be noted on the VA Form 10-7080 with a beginning and end date.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        }
+      ],
+      "family_id": "intake_routing",
+      "family_label": "intake / routing",
+      "kernel_id": "bd97e2f03a1336e8",
+      "label": "Use VA Referral Authorization Form",
+      "recurrence_count": 2,
+      "representative_requirement": "Authorization for nursing home care will besubmitted on VA Form 10-7080, \u0093Approved Referral for Medica l Care.\u0094 Each authorization referral period will be noted on the VA Form 10-7080 with a beginning and end date.",
+      "top_terms": [
+        "agency",
+        "authorization",
+        "care",
+        "will",
+        "form",
+        "referral"
       ]
     }
   ]

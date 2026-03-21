@@ -13,11 +13,49 @@ EXCLUDED_REQUIREMENT_PHRASES = (
     "covered telecommunications equipment or services",
     "submission of its offer",
     "offeror represents",
+    "offeror representations and certifications",
     "internal confidentiality agreements",
     "lawfully reporting waste, fraud, or abuse",
     "service contract reporting requirements",
     "tax court review",
     "federal awards",
+    "contact for authorized va medical center personnel",
+    "claims must be submitted to the va facility that issued the authorization",
+    "submit a copy of claim",
+    "copy of claim at the time of submission",
+    "clinical review and will not delay payment",
+    "collect from any party",
+    "submit an original invoice",
+    "clean claim",
+    "assignment of claims",
+    "routing transit number",
+    "wire transfer payment",
+    "electronic claims",
+    "fee-for-service",
+    "sequestration, quality reporting",
+    "applied to claims automatically",
+    "is soliciting information for contractors",
+    "request for information",
+    "documentation authorizing payment",
+    "payment amount",
+    "overpayment",
+    "remittance",
+    "contracting officer",
+    "privacy act of 1974",
+    "audit and records",
+    "simplified acquisition threshold",
+    "sealed bid",
+    "as used in this clause, records include books",
+    "payment reporting requirements described in far 4.904",
+    "comptroller general",
+    "right to examine",
+    "make available at its offices",
+    "records, materials, and other evidence for examination",
+    "final payment under this contract",
+    "contract is completely or partially terminated",
+    "records relating to appeals under the disputes clause",
+    "beneficiary identification and records locator subsystem",
+    "service-disabled veteran",
 )
 
 
@@ -91,6 +129,10 @@ def is_excluded_requirement(sentence: str) -> bool:
     lowered = sentence.lower()
     if any(phrase in lowered for phrase in EXCLUDED_REQUIREMENT_PHRASES):
         return True
+    if "representations and certifications" in lowered or "naics code" in lowered:
+        return True
     if lowered.startswith("[]") or "[reserved]" in lowered or "52.204" in lowered:
+        return True
+    if "far " in lowered and ("52.212" in lowered or "4.1201" in lowered):
         return True
     return False
