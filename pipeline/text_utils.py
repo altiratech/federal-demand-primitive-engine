@@ -1,0 +1,173 @@
+from __future__ import annotations
+
+import hashlib
+import math
+import re
+from collections import Counter
+from html.parser import HTMLParser
+from html import unescape
+from pathlib import Path
+
+
+STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "by",
+    "for",
+    "from",
+    "if",
+    "in",
+    "is",
+    "it",
+    "of",
+    "on",
+    "or",
+    "that",
+    "the",
+    "their",
+    "this",
+    "to",
+    "with",
+}
+
+
+def normalize_whitespace(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def html_to_text(html: str) -> str:
+    parser = HTMLToTextParser()
+    parser.feed(html or "")
+    parser.close()
+    return normalize_whitespace(parser.get_text())
+
+
+def stable_hash(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:16]
+
+
+def slugify(text: str) -> str:
+    compact = re.sub(r"[^a-zA-Z0-9]+", "-", text.strip().lower())
+    return compact.strip("-") or "item"
+
+
+def simple_stem(token: str) -> str:
+    if len(token) <= 4:
+        return token
+    for suffix in ("ing", "ed", "es", "s"):
+        if token.endswith(suffix) and len(token) - len(suffix) >= 4:
+            return token[: -len(suffix)]
+    return token
+
+
+def tokenize(text: str) -> list[str]:
+    clean = re.sub(r"[^a-z0-9]+", " ", text.lower())
+    tokens = [simple_stem(part) for part in clean.split() if len(part) > 2]
+    return [token for token in tokens if token not in STOPWORDS]
+
+
+def sentence_split(text: str) -> list[str]:
+    chunks = re.split(r"(?<=[.!?])\s+|\n{2,}", normalize_whitespace(text))
+    results = []
+    for chunk in chunks:
+        cleaned = chunk.strip(" -\t")
+        if cleaned:
+            results.append(cleaned)
+    return results
+
+
+def canonicalize_requirement(text: str) -> str:
+    normalized = unescape(text.lower())
+    normalized = re.sub(
+        r"\b(contractor|vendor|offeror|quoter|successful offeror|successful contractor)\b",
+        "contractor",
+        normalized,
+    )
+    normalized = re.sub(r"\bva\b|\bveterans affairs\b", "agency", normalized)
+    normalized = re.sub(r"\b\d+(?:\.\d+)?\b", " ", normalized)
+    normalized = re.sub(r"[^a-z\s]+", " ", normalized)
+    return normalize_whitespace(normalized)
+
+
+def counter_cosine_similarity(left: Counter[str], right: Counter[str]) -> float:
+    if not left or not right:
+        return 0.0
+    overlap = set(left) & set(right)
+    numerator = sum(left[token] * right[token] for token in overlap)
+    left_norm = math.sqrt(sum(value * value for value in left.values()))
+    right_norm = math.sqrt(sum(value * value for value in right.values()))
+    if not left_norm or not right_norm:
+        return 0.0
+    return numerator / (left_norm * right_norm)
+
+
+def phrase_counts(texts: list[str], size: int = 2) -> Counter[str]:
+    phrases: Counter[str] = Counter()
+    for text in texts:
+        tokens = tokenize(text)
+        if len(tokens) < size:
+            continue
+        for index in range(0, len(tokens) - size + 1):
+            phrase = " ".join(tokens[index : index + size])
+            phrases[phrase] += 1
+    return phrases
+
+
+def title_case_phrase(phrase: str) -> str:
+    return " ".join(word.capitalize() for word in phrase.split())
+
+
+def read_text_file(path: Path) -> str:
+    return path.read_text(errors="ignore")
+
+
+class HTMLToTextParser(HTMLParser):
+    BLOCK_TAGS = {
+        "address",
+        "article",
+        "aside",
+        "blockquote",
+        "br",
+        "div",
+        "dt",
+        "dd",
+        "footer",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "header",
+        "li",
+        "main",
+        "nav",
+        "p",
+        "section",
+        "table",
+        "tr",
+    }
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self._chunks: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in self.BLOCK_TAGS:
+            self._chunks.append("\n")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in self.BLOCK_TAGS:
+            self._chunks.append("\n")
+
+    def handle_data(self, data: str) -> None:
+        if data:
+            self._chunks.append(data)
+
+    def get_text(self) -> str:
+        return "".join(self._chunks)

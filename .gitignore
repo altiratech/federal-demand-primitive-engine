@@ -16,4 +16,8 @@ coverage/
 *.db
 data/raw/
 data/snapshots/
-artifacts/
+artifacts/*
+!artifacts/va_case_management_workflow_support_v1/
+artifacts/va_case_management_workflow_support_v1/*
+!artifacts/va_case_management_workflow_support_v1/requirement_kernels.json
+!artifacts/va_case_management_workflow_support_v1/requirement_kernels.md

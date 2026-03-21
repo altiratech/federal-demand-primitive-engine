@@ -1,0 +1,226 @@
+[
+  {
+    "attachments": [
+      {
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "filename": "36c24725q0806-docx.docx",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/d068831188e14867a5e5640fc1aa4c99/attachments/01-36c24725q0806-docx.docx",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f618c1e9ab84a3dabbc9dc7b4f4295e/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.247-NETWORK CONTRACT OFFICE 7 (36C247)",
+    "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+    "notice_type": "Solicitation",
+    "posted_date": "2025-10-01",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/d068831188e14867a5e5640fc1aa4c99",
+    "resource_link_count": 4,
+    "selection_matches": [
+      "+community nursing home",
+      "+nursing home",
+      "+attachments"
+    ],
+    "selection_score": 16.0,
+    "solicitation_number": "36C24725Q0806",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+    "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services",
+    "ui_link": "https://sam.gov/workspace/contract/opp/d068831188e14867a5e5640fc1aa4c99/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "filename": "36c24725q0806-2-docx.docx",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/1c625382451047fca99b6a64757cc07f/attachments/01-36c24725q0806-2-docx.docx",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c950de410e744f19a293f90cb45c0494/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.247-NETWORK CONTRACT OFFICE 7 (36C247)",
+    "notice_id": "1c625382451047fca99b6a64757cc07f",
+    "notice_type": "Presolicitation",
+    "posted_date": "2025-09-09",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/1c625382451047fca99b6a64757cc07f",
+    "resource_link_count": 2,
+    "selection_matches": [
+      "+community nursing home",
+      "+nursing home",
+      "+attachments"
+    ],
+    "selection_score": 16.0,
+    "solicitation_number": "36C24725Q0806",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=1c625382451047fca99b6a64757cc07f",
+    "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services",
+    "ui_link": "https://sam.gov/workspace/contract/opp/1c625382451047fca99b6a64757cc07f/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "application/pdf",
+        "filename": "36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/bb8fd0d98f08490aae77df07d12ab2e8/attachments/01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e86792b124514998b7cf9cd6162d9e23/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.256-NETWORK CONTRACT OFFICE 16 (36C256)",
+    "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "posted_date": "2025-03-24",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/bb8fd0d98f08490aae77df07d12ab2e8",
+    "resource_link_count": 3,
+    "selection_matches": [
+      "+community nursing home",
+      "+nursing home",
+      "+attachments"
+    ],
+    "selection_score": 16.0,
+    "solicitation_number": "36C25625R0050",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+    "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas.",
+    "ui_link": "https://sam.gov/workspace/contract/opp/bb8fd0d98f08490aae77df07d12ab2e8/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "application/pdf",
+        "filename": "audit-and-change-monitoring-solution-requirements-amendment-1-pdf.pdf",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/289e64db5bde4bc98be3e18e1334f2c9/attachments/01-audit-and-change-monitoring-solution-requirements-amendment-1-pdf.pdf",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a295fe0dbbf4e7491a7545a1dca4ac4/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+    "notice_id": "289e64db5bde4bc98be3e18e1334f2c9",
+    "notice_type": "Sources Sought",
+    "posted_date": "2025-12-17",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/289e64db5bde4bc98be3e18e1334f2c9",
+    "resource_link_count": 5,
+    "selection_matches": [
+      "+audit",
+      "+change monitoring",
+      "family:reporting_compliance_support",
+      "+attachments"
+    ],
+    "selection_score": 12.25,
+    "solicitation_number": "36C10B26Q0097",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=289e64db5bde4bc98be3e18e1334f2c9",
+    "title": "7A21--Audit and Change Monitoring Solution - RFI only",
+    "ui_link": "https://sam.gov/workspace/contract/opp/289e64db5bde4bc98be3e18e1334f2c9/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "application/pdf",
+        "filename": "20251017-1-538-26-201-scope-of-work-for-ae-technical-services-ps-r-pdf.pdf",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/c924ee9c39304e7497fdb2d96dbff203/attachments/01-20251017-1-538-26-201-scope-of-work-for-ae-technical-services-ps-r-pdf.pdf",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23fe7c8198d6402b9f66ea624592f925/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.250-NETWORK CONTRACT OFFICE 10 (36C250)",
+    "notice_id": "c924ee9c39304e7497fdb2d96dbff203",
+    "notice_type": "Presolicitation",
+    "posted_date": "2025-11-26",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/c924ee9c39304e7497fdb2d96dbff203",
+    "resource_link_count": 2,
+    "selection_matches": [
+      "+nurse call",
+      "+it-context",
+      "+attachments"
+    ],
+    "selection_score": 9.0,
+    "solicitation_number": "36C25026R0032",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=c924ee9c39304e7497fdb2d96dbff203",
+    "title": "C1DZ--AE Upgrade Nurse Call System 538-26-201 - VAMC Chillicothe",
+    "ui_link": "https://sam.gov/workspace/contract/opp/c924ee9c39304e7497fdb2d96dbff203/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "filename": "sources-sought-viewpoint-docx.docx",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/c623b5d6caaf4f909787c9ab0be8726a/attachments/01-sources-sought-viewpoint-docx.docx",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e1871401e4e42298a10c4f1151025b1/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+    "notice_id": "c623b5d6caaf4f909787c9ab0be8726a",
+    "notice_type": "Sources Sought",
+    "posted_date": "2025-02-19",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/c623b5d6caaf4f909787c9ab0be8726a",
+    "resource_link_count": 3,
+    "selection_matches": [
+      "+software support",
+      "+it-context",
+      "+attachments"
+    ],
+    "selection_score": 8.5,
+    "solicitation_number": "36C26125Q0313",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=c623b5d6caaf4f909787c9ab0be8726a",
+    "title": "J065 | Viewpoint Software Support and Maintenance",
+    "ui_link": "https://sam.gov/workspace/contract/opp/c623b5d6caaf4f909787c9ab0be8726a/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "text/plain",
+        "filename": "1973-0130-v72-determination-new-mexico-txt.txt",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/b89eda047e704707b5782a30f8face64/attachments/01-1973-0130-v72-determination-new-mexico-txt.txt",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b37277787f24b20a21e87a292d93c56/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.257-NETWORK CONTRACT OFFICE 17 (36C257)",
+    "notice_id": "b89eda047e704707b5782a30f8face64",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "posted_date": "2025-12-30",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/b89eda047e704707b5782a30f8face64",
+    "resource_link_count": 4,
+    "selection_matches": [
+      "+nursing home",
+      "+attachments"
+    ],
+    "selection_score": 8.0,
+    "solicitation_number": "36C25726Q0135",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=b89eda047e704707b5782a30f8face64",
+    "title": "Open and Continuous Community Nursing Home RFQ 01.01.2026-12.31.2026",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b89eda047e704707b5782a30f8face64/view"
+  },
+  {
+    "attachments": [
+      {
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "filename": "rfi-va-prescription-drug-monitoring-program-pdmp-sustainment-support-services-docx.docx",
+        "raw_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/b0287d8b570149e1ac3d1379caae69a1/attachments/01-rfi-va-prescription-drug-monitoring-program-pdmp-sustainment-support-services-docx.docx",
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f975e664b2c411d8f2799135370f59b/download"
+      }
+    ],
+    "description_html": "",
+    "description_text": "",
+    "full_parent_path_name": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+    "notice_id": "b0287d8b570149e1ac3d1379caae69a1",
+    "notice_type": "Sources Sought",
+    "posted_date": "2025-12-17",
+    "raw_directory": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/notices/b0287d8b570149e1ac3d1379caae69a1",
+    "resource_link_count": 3,
+    "selection_matches": [
+      "+support services",
+      "family:reporting_compliance_support",
+      "+attachments"
+    ],
+    "selection_score": 7.25,
+    "solicitation_number": "36C10B26Q0103",
+    "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=b0287d8b570149e1ac3d1379caae69a1",
+    "title": "DA01--State Prescription Drug Monitoring Program (PDMP) Integration Solution and Support Services - New Task Order (VA-26-00013141)",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b0287d8b570149e1ac3d1379caae69a1/view"
+  }
+]

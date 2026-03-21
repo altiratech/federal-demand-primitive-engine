@@ -1,0 +1,563 @@
+{
+  "corpus": {
+    "corpus_id": "va_case_management_workflow_support_v1",
+    "date_windows": [
+      {
+        "posted_from": "01/01/2025",
+        "posted_to": "12/31/2025"
+      }
+    ],
+    "label": "VA case-management and workflow-support corpus",
+    "organization_name": "VETERANS AFFAIRS",
+    "procurement_types": [
+      "p",
+      "o",
+      "k",
+      "r",
+      "s"
+    ],
+    "selection_summary": {
+      "corpus_id": "va_case_management_workflow_support_v1",
+      "label": "VA case-management and workflow-support corpus",
+      "missing_seed_notice_ids": [],
+      "query_summaries": [
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_289e64db5bde4bc98be3e18e1334f2c9.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "289e64db5bde4bc98be3e18e1334f2c9"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_b0287d8b570149e1ac3d1379caae69a1.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "b0287d8b570149e1ac3d1379caae69a1"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_c623b5d6caaf4f909787c9ab0be8726a.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "c623b5d6caaf4f909787c9ab0be8726a"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_b89eda047e704707b5782a30f8face64.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "b89eda047e704707b5782a30f8face64"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_bb8fd0d98f08490aae77df07d12ab2e8.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "bb8fd0d98f08490aae77df07d12ab2e8"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_1c625382451047fca99b6a64757cc07f.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "1c625382451047fca99b6a64757cc07f"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_d068831188e14867a5e5640fc1aa4c99.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "d068831188e14867a5e5640fc1aa4c99"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_178223c18ff94554967e71d661d6d6db.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "178223c18ff94554967e71d661d6d6db"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_0aa1d6c00a0348689eaf5d60b07e50ef.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "0aa1d6c00a0348689eaf5d60b07e50ef"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_3229d2b6bf0c49848c30b2d8896c6c99.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "3229d2b6bf0c49848c30b2d8896c6c99"
+        },
+        {
+          "cache_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/raw/va_case_management_workflow_support_v1/queries/seed_c924ee9c39304e7497fdb2d96dbff203.json",
+          "retrieved_records": 1,
+          "seed_notice_id": "c924ee9c39304e7497fdb2d96dbff203"
+        }
+      ],
+      "seed_notice_ids": [
+        "289e64db5bde4bc98be3e18e1334f2c9",
+        "b0287d8b570149e1ac3d1379caae69a1",
+        "c623b5d6caaf4f909787c9ab0be8726a",
+        "b89eda047e704707b5782a30f8face64",
+        "bb8fd0d98f08490aae77df07d12ab2e8",
+        "1c625382451047fca99b6a64757cc07f",
+        "d068831188e14867a5e5640fc1aa4c99",
+        "178223c18ff94554967e71d661d6d6db",
+        "0aa1d6c00a0348689eaf5d60b07e50ef",
+        "3229d2b6bf0c49848c30b2d8896c6c99",
+        "c924ee9c39304e7497fdb2d96dbff203"
+      ],
+      "selected_documents": 8,
+      "selection_path": "/Users/ryanjameson/Desktop/Lifehub/Code/active/KProject/federal-demand-primitive-engine/data/processed/va_case_management_workflow_support_v1/selected_documents.json",
+      "selection_threshold": 5.0,
+      "total_unique_opportunities": 11
+    }
+  },
+  "counts": {
+    "documents": 8,
+    "kernels": 12,
+    "requirement_candidates": 243
+  },
+  "generated_at": "2026-03-21T09:22:38.053707+00:00",
+  "kernels": [
+    {
+      "confidence": 0.96,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 85",
+          "snippet_text": "(j) Provider will also submit a copy of claim at the time of submission to authorized VA medical center personnel.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "(j) Provider will also submit a copy of clai m at the time of submissionto authorized VA medical center personnel.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "64f5311c675b3401",
+      "label": "Authoriz Agency",
+      "recurrence_count": 9,
+      "representative_requirement": "(j) Provider will also submit a copy of claim at the time of submission to authorized VA medical center personnel.",
+      "top_terms": [
+        "agency",
+        "authoriz",
+        "medical",
+        "center",
+        "personnel",
+        "will"
+      ]
+    },
+    {
+      "confidence": 0.61,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 41",
+          "snippet_text": "\u2022 PT, OT and SLP: When PT, OT or SLP therapy is required during days 101+ of a Veteran\u2019s stay, providers must get prior authorization from VA.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "High-CostMedication: When a high-cost medication is required during a Veteran\u0092s stay, providers must get prior authorization from VA.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "5d05012c494c73f7",
+      "label": "Requir During",
+      "recurrence_count": 3,
+      "representative_requirement": "\u2022 PT, OT and SLP: When PT, OT or SLP therapy is required during days 101+ of a Veteran\u2019s stay, providers must get prior authorization from VA.",
+      "top_terms": [
+        "high",
+        "when",
+        "requir",
+        "during",
+        "veteran",
+        "stay"
+      ]
+    },
+    {
+      "confidence": 0.61,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 74",
+          "snippet_text": "Claims must be submitted to the VA facility that issued the authorization.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Claims must be submitted to the VA facility that issued the authorization.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "84f403a5fb88bab0",
+      "label": "Must Submitt",
+      "recurrence_count": 3,
+      "representative_requirement": "Claims must be submitted to the VA facility that issued the authorization.",
+      "top_terms": [
+        "must",
+        "submitt",
+        "agency",
+        "facility",
+        "issu",
+        "authorization"
+      ]
+    },
+    {
+      "confidence": 0.61,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 174",
+          "snippet_text": "100% 100% Periodic reviews Positive past performance rating 5 (C)(14) All medical records concerning the veteran's care in the nursing home a) will be readily accessible to VA, and b) within acceptable standards and practice.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "All medical records concerningthe Veteran\u0092s care in the CNH shall be readily accessible to VA.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "records_documentation",
+      "family_label": "records / documentation",
+      "kernel_id": "b4c013a21a37c55d",
+      "label": "All Medical",
+      "recurrence_count": 3,
+      "representative_requirement": "100% 100% Periodic reviews Positive past performance rating 5 (C)(14) All medical records concerning the veteran's care in the nursing home a) will be readily accessible to VA, and b) within acceptable standards and practice.",
+      "top_terms": [
+        "all",
+        "medical",
+        "record",
+        "veteran",
+        "care",
+        "readily"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 37",
+          "snippet_text": "CNHs shall provide primary medical care, provider visits as needed per month, and specialty consultations, drugs and routine supplies, laboratory, x-ray, and other special services preauthorized by VA.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "CNHs shall provide primary medical care, provider visits as needed per month, and specialty consultations, drugs and routine supplies, laboratory, x-ray, and other special services preauthorized by VA.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "96532610f1b362ed",
+      "label": "Cnhs Shall",
+      "recurrence_count": 2,
+      "representative_requirement": "CNHs shall provide primary medical care, provider visits as needed per month, and specialty consultations, drugs and routine supplies, laboratory, x-ray, and other special services preauthorized by VA.",
+      "top_terms": [
+        "cnhs",
+        "shall",
+        "provide",
+        "primary",
+        "medical",
+        "care"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 41",
+          "snippet_text": "\u2022 Physician services: Providers delivering Federally mandated or separately authorized services shall bill fee-for-service.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "a.Physician services: Providers delivering federally mandated or separately authorized services shall bill fee-for-service.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "a6224c11fc57f7f1",
+      "label": "Physician Servic",
+      "recurrence_count": 2,
+      "representative_requirement": "\u2022 Physician services: Providers delivering Federally mandated or separately authorized services shall bill fee-for-service.",
+      "top_terms": [
+        "servic",
+        "physician",
+        "provider",
+        "deliver",
+        "federally",
+        "mandat"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 41",
+          "snippet_text": "\u2022 Escort services: When an escort to a medical appointment is indicated, providers must get prior authorization from VA.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "c.Escort services: When an escort to a medical appointment is indicated, providers must get prio r authorization from VA.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "dc559a7494118704",
+      "label": "Escort Servic",
+      "recurrence_count": 2,
+      "representative_requirement": "\u2022 Escort services: When an escort to a medical appointment is indicated, providers must get prior authorization from VA.",
+      "top_terms": [
+        "escort",
+        "servic",
+        "when",
+        "medical",
+        "appointment",
+        "indicat"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 85",
+          "snippet_text": "This is for clinical review and will not delay payment through the automated system.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "This is for c linical review and will notdelay payment through the autom ated system.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "0681b4a324f5564d",
+      "label": "Review Will",
+      "recurrence_count": 2,
+      "representative_requirement": "This is for clinical review and will not delay payment through the automated system.",
+      "top_terms": [
+        "review",
+        "will",
+        "payment",
+        "through",
+        "system",
+        "clinical"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 143",
+          "snippet_text": "Provider shall not seek to recover or collect from any party, other than VA, any payment or fee arising from Covered Services authorized and provided under to this Contract, including any missed appointment fees or charges.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Provider shall not seek to recover orcollect fromany par ty, other than VA, any payment or fee arising from Covered Serv ices authorized and provided under to this Contract, including anymissed appointment fees or charges.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "b4455248d4a24978",
+      "label": "Provider Shall",
+      "recurrence_count": 2,
+      "representative_requirement": "Provider shall not seek to recover or collect from any party, other than VA, any payment or fee arising from Covered Services authorized and provided under to this Contract, including any missed appointment fees or charges.",
+      "top_terms": [
+        "any",
+        "provider",
+        "shall",
+        "not",
+        "seek",
+        "recover"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 221",
+          "snippet_text": "After reviewing SAM information, the Offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212\u20133, Offeror Representations and Certifications\u2014Commercial Products and Commercial Services, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard(s) applicable to the NAICS code(s) referenced for this solicitation), at the time this offer is submitted and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs .",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "After reviewingSAM information, the Offeror verifies bysubmission ofthis offer that the representations and certifications currently posted electronically at FAR 52.212\u00963, Offeror Representations andCertifications\u0097Commercial Products and Commercial Services,have been entered or updated in thelast 12 months, are current, accurate, complete, and applicable tothis solicitation(includingthe business size standard(s)applicabletothe NAICS code(s) referenced forthis solicitation), at the time this offer is submittedand are incorporated inthis offer by reference (see FAR 4.1201), exceptfor paragraphs .",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "review_approval",
+      "family_label": "review / approval",
+      "kernel_id": "5a7c0721461241db",
+      "label": "Representation Certification",
+      "recurrence_count": 2,
+      "representative_requirement": "After reviewing SAM information, the Offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212\u20133, Offeror Representations and Certifications\u2014Commercial Products and Commercial Services, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard(s) applicable to the NAICS code(s) referenced for this solicitation), at the time this offer is submitted and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs .",
+      "top_terms": [
+        "offer",
+        "contractor",
+        "representation",
+        "far",
+        "commercial",
+        "solicitation"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 51",
+          "snippet_text": "Changes in the status of the licensure will be immediately reported to the Department of Veterans Affairs Atlanta Health Care System and Community Care Department at (404) 521-6260 Ext.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Changes in the status of the licensure will be immediately reported to the OBVAMC VA Home and Community Care Department at 318-393-7031.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "reporting_compliance_support",
+      "family_label": "reporting / compliance support",
+      "kernel_id": "a9af1e9ebce7910a",
+      "label": "Chang Statu",
+      "recurrence_count": 2,
+      "representative_requirement": "Changes in the status of the licensure will be immediately reported to the Department of Veterans Affairs Atlanta Health Care System and Community Care Department at (404) 521-6260 Ext.",
+      "top_terms": [
+        "department",
+        "care",
+        "chang",
+        "statu",
+        "licensure",
+        "will"
+      ]
+    },
+    {
+      "confidence": 0.55,
+      "document_count": 2,
+      "evidence": [
+        {
+          "notice_id": "d068831188e14867a5e5640fc1aa4c99",
+          "posted_date": "2025-10-01",
+          "section_title": "01-36c24725q0806-docx.docx part 58",
+          "snippet_text": "Reporting shall include date of occurrence and patient disposition and outcome.",
+          "source_part": "01-36c24725q0806-docx.docx",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=d068831188e14867a5e5640fc1aa4c99",
+          "title": "Q402--Q402- Atlanta VAMC Community Nursing Home Services"
+        },
+        {
+          "notice_id": "bb8fd0d98f08490aae77df07d12ab2e8",
+          "posted_date": "2025-03-24",
+          "section_title": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf extracted text",
+          "snippet_text": "Reporting shall include date of occurrence and patient disposition and outcome.",
+          "source_part": "01-36c25625r0050-multi-award-obvamc-667-pdf.pdf",
+          "source_url": "https://sam.gov/api/prod/opportunities/v1/noticedesc?noticeid=bb8fd0d98f08490aae77df07d12ab2e8",
+          "title": "Q402--Open & Continuous for OBVAMC for Community Nursing Home Services in Louisiana, Arkansas, and Texas."
+        }
+      ],
+      "family_id": "reporting_compliance_support",
+      "family_label": "reporting / compliance support",
+      "kernel_id": "64e4aa2c99e7324c",
+      "label": "Report Shall",
+      "recurrence_count": 2,
+      "representative_requirement": "Reporting shall include date of occurrence and patient disposition and outcome.",
+      "top_terms": [
+        "report",
+        "shall",
+        "include",
+        "date",
+        "occurrence",
+        "patient"
+      ]
+    }
+  ]
+}
