@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kernel Review Surface</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Federal Demand Primitive Engine</p>
+          <h1>Kernel Review Surface</h1>
+          <p class="hero-copy">
+            Inspect the locked VA workflow-support kernels with readable analyst snippets and the raw evidence lines
+            that back them up.
+          </p>
+        </div>
+        <div class="hero-meta" id="hero-meta">
+          <div class="stat-card">
+            <span class="stat-label">Artifact</span>
+            <strong id="artifact-generated">Loading…</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="controls">
+        <label class="control-field">
+          <span>Search kernels or evidence</span>
+          <input id="search-input" type="search" placeholder="prior authorization, licensure, referral form…" />
+        </label>
+
+        <label class="control-field">
+          <span>Family</span>
+          <select id="family-filter"></select>
+        </label>
+      </section>
+
+      <section class="summary-grid" id="summary-grid"></section>
+
+      <main class="workspace">
+        <aside class="kernel-list-panel">
+          <div class="panel-header">
+            <h2>Kernel Library</h2>
+            <p id="results-label">Loading kernels…</p>
+          </div>
+          <div id="kernel-list" class="kernel-list"></div>
+        </aside>
+
+        <section class="detail-panel">
+          <div id="detail-empty" class="detail-empty">
+            <p>Select a kernel to review its representative requirement and evidence.</p>
+          </div>
+          <div id="kernel-detail" class="kernel-detail" hidden></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
