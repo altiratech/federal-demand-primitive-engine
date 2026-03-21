@@ -35,6 +35,50 @@ STOPWORDS = {
     "with",
 }
 
+OCR_CHAR_REPLACEMENTS = str.maketrans(
+    {
+        "\u0091": "'",
+        "\u0092": "'",
+        "\u0093": '"',
+        "\u0094": '"',
+        "\u0096": "-",
+        "\u0097": "-",
+        "\u00a0": " ",
+        "\u00ad": "",
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2013": "-",
+        "\u2014": "-",
+    }
+)
+
+CORPUS_OCR_REPAIRS = {
+    "High-CostMedication": "High-Cost Medication",
+    "concerningthe": "concerning the",
+    "VAstaff": "VA staff",
+    "providedaccess": "provided access",
+    "bythe": "by the",
+    "willbesubmitted": "will be submitted",
+    "toappeals": "to appeals",
+    "at leas t": "at least",
+    "prio r": "prior",
+    "Medica l": "Medical",
+    "VAstaff": "VA staff",
+    "itsoffices": "its offices",
+    "allreasonable": "all reasonable",
+    "thiscontract": "this contract",
+    "suchappeals": "such appeals",
+    "claimsare": "claims are",
+    "completelyor": "completely or",
+    "Ifthe": "If the",
+    "issubject": "is subject",
+    "toverify": "to verify",
+    "besubmitted": "be submitted",
+    "patien t": "patient",
+}
+
 
 def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
@@ -92,6 +136,19 @@ def canonicalize_requirement(text: str) -> str:
     normalized = re.sub(r"\b\d+(?:\.\d+)?\b", " ", normalized)
     normalized = re.sub(r"[^a-z\s]+", " ", normalized)
     return normalize_whitespace(normalized)
+
+
+def clean_ocr_text(text: str) -> str:
+    cleaned = text.translate(OCR_CHAR_REPLACEMENTS)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    cleaned = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", cleaned)
+    cleaned = re.sub(r"\b([A-Z]{2,})([a-z]{2,})\b", r"\1 \2", cleaned)
+    cleaned = re.sub(r"(?<=[:;,.])(?=[A-Za-z])", " ", cleaned)
+    cleaned = re.sub(r"(?<=\))(?=[A-Za-z])", " ", cleaned)
+    cleaned = re.sub(r"(?<=[A-Za-z])(?=\()", " ", cleaned)
+    for source, replacement in CORPUS_OCR_REPAIRS.items():
+        cleaned = cleaned.replace(source, replacement)
+    return normalize_whitespace(cleaned)
 
 
 def counter_cosine_similarity(left: Counter[str], right: Counter[str]) -> float:

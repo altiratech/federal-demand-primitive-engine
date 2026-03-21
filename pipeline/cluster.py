@@ -112,7 +112,7 @@ def cluster_requirement_candidates(
             continue
         representative = choose_representative(evidence_items)
         texts = cluster["texts"]
-        phrase = generate_kernel_label(representative.raw_text, texts) or best_phrase(texts) or default_phrase(
+        phrase = generate_kernel_label(representative.cleaned_text, texts) or best_phrase(texts) or default_phrase(
             cluster["family_label"]
         )
         top_terms = [term for term, _ in cluster["token_counter"].most_common(6)]
@@ -125,7 +125,8 @@ def cluster_requirement_candidates(
                 posted_date=item.posted_date,
                 section_title=item.section_title,
                 source_part=item.source_part,
-                snippet_text=item.raw_text,
+                cleaned_snippet_text=item.cleaned_text,
+                raw_snippet_text=item.raw_text,
                 source_url=item.source_url,
             )
             for item in dedupe_evidence(evidence_items)[:4]
@@ -138,7 +139,8 @@ def cluster_requirement_candidates(
                 family_label=cluster["family_label"],
                 recurrence_count=recurrence_count,
                 document_count=document_count,
-                representative_requirement=representative.raw_text,
+                representative_requirement=representative.cleaned_text,
+                representative_requirement_raw=representative.raw_text,
                 confidence=round(confidence, 2),
                 top_terms=top_terms,
                 evidence=evidence,
@@ -257,5 +259,11 @@ def representative_quality_score(item: RequirementCandidate) -> float:
             noise_penalty += 0.6
     if item.raw_text.lstrip()[:1].isdigit():
         noise_penalty += 0.8
-    length_penalty = max(0.0, len(item.raw_text) - 120) * 0.01
-    return item.requirement_score - noise_penalty - length_penalty
+    if re.search(r"[a-z][A-Z]", item.raw_text):
+        noise_penalty += 0.6
+    if any(ord(character) > 126 for character in item.raw_text):
+        noise_penalty += 0.8
+    cleanup_delta = max(0, len(item.raw_text) - len(item.cleaned_text))
+    length_penalty = max(0.0, len(item.cleaned_text) - 120) * 0.01
+    cleanup_penalty = cleanup_delta * 0.02
+    return item.requirement_score - noise_penalty - length_penalty - cleanup_penalty

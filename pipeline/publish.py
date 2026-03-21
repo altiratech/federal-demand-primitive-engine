@@ -70,13 +70,15 @@ def render_markdown(
                 f"- recurrence: {kernel.recurrence_count} snippets across {kernel.document_count} notices",
                 f"- confidence: {kernel.confidence}",
                 f"- representative requirement: {kernel.representative_requirement}",
+                f"- representative raw evidence: {kernel.representative_requirement_raw}",
                 "- evidence:",
             ]
         )
         for evidence in kernel.evidence:
             lines.append(
                 "  - "
-                f"{evidence.posted_date} | {evidence.title} | {evidence.section_title} | "
-                f"{evidence.snippet_text}"
+                f"{evidence.posted_date} | {evidence.title} | {evidence.section_title}"
             )
+            lines.append(f"    - analyst snippet: {evidence.cleaned_snippet_text}")
+            lines.append(f"    - raw evidence: {evidence.raw_snippet_text}")
     return "\n".join(lines) + "\n"

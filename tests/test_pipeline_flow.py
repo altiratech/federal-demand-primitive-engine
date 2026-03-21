@@ -10,6 +10,7 @@ from pipeline.extract import extract_requirement_candidates, is_excluded_require
 from pipeline.models import CorpusDocument
 from pipeline.normalize import build_sections, description_sections
 from pipeline.publish import publish_kernel_artifact
+from pipeline.text_utils import clean_ocr_text
 
 
 def make_config():
@@ -90,8 +91,18 @@ def test_extract_requirement_candidates_preserves_schema(tmp_path: Path) -> None
     payload = candidates[0].to_dict()
     assert payload["family_id"] == "intake_routing"
     assert payload["family_label"] == "intake / routing"
+    assert payload["cleaned_text"] == payload["raw_text"]
     assert payload["normalized_text"]
-    assert {"candidate_id", "notice_id", "raw_text", "normalized_text", "source_url"} <= set(payload)
+    assert {"candidate_id", "notice_id", "raw_text", "cleaned_text", "normalized_text", "source_url"} <= set(payload)
+
+
+def test_clean_ocr_text_repairs_common_spacing_and_character_noise() -> None:
+    assert clean_ocr_text("High-CostMedication: When prior authorization is required for a Veterans stay.") == (
+        "High-Cost Medication: When prior authorization is required for a Veteran's stay."
+    )
+    assert clean_ocr_text("Selected VAstaff will be providedaccess to the CNH electronic health record.") == (
+        "Selected VA staff will be provided access to the CNH electronic health record."
+    )
 
 
 def test_is_excluded_requirement_filters_contract_admin_noise() -> None:
@@ -201,4 +212,5 @@ def test_corpus_to_kernel_integration(tmp_path: Path) -> None:
     artifact_payload = json.loads(Path(artifact_paths["json"]).read_text())
     assert artifact_payload["counts"]["kernels"] == 1
     assert artifact_payload["kernels"][0]["document_count"] == 2
-    assert Path(artifact_paths["markdown"]).read_text().startswith("# VA case-management and workflow-support corpus")
+    assert "representative raw evidence" in Path(artifact_paths["markdown"]).read_text()
+    assert "analyst snippet:" in Path(artifact_paths["markdown"]).read_text()

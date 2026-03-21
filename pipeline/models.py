@@ -116,6 +116,7 @@ class RequirementCandidate:
     section_id: str
     section_title: str
     raw_text: str
+    cleaned_text: str
     normalized_text: str
     tokens: list[str]
     requirement_score: float
@@ -132,7 +133,8 @@ class KernelEvidence:
     posted_date: str
     section_title: str
     source_part: str
-    snippet_text: str
+    cleaned_snippet_text: str
+    raw_snippet_text: str
     source_url: str
 
     def to_dict(self) -> dict[str, Any]:
@@ -148,6 +150,7 @@ class RequirementKernel:
     recurrence_count: int
     document_count: int
     representative_requirement: str
+    representative_requirement_raw: str
     confidence: float
     top_terms: list[str]
     evidence: list[KernelEvidence]

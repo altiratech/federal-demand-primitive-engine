@@ -5,7 +5,7 @@ from pathlib import Path
 
 from pipeline.fetch import FAMILY_LABELS
 from pipeline.models import CorpusConfig, DocumentSection, RequirementCandidate
-from pipeline.text_utils import canonicalize_requirement, sentence_split, stable_hash, tokenize
+from pipeline.text_utils import canonicalize_requirement, clean_ocr_text, sentence_split, stable_hash, tokenize
 
 
 EXCLUDED_REQUIREMENT_PHRASES = (
@@ -69,18 +69,19 @@ def extract_requirement_candidates(
     requirement_verbs = set(config.requirement_verbs)
     for section in sections:
         for sentence in sentence_split(section.section_text):
-            if is_excluded_requirement(sentence):
+            cleaned_sentence = clean_ocr_text(sentence)
+            if is_excluded_requirement(cleaned_sentence):
                 continue
-            tokens = tokenize(sentence)
+            tokens = tokenize(cleaned_sentence)
             if len(tokens) < 6:
                 continue
-            family_id, family_score = assign_family(config, sentence)
-            verb_score = sum(1.0 for verb in requirement_verbs if verb in sentence.lower())
-            imperative_bonus = 1.5 if sentence.lower().startswith(("contractor shall", "shall ", "must ")) else 0.0
+            family_id, family_score = assign_family(config, cleaned_sentence)
+            verb_score = sum(1.0 for verb in requirement_verbs if verb in cleaned_sentence.lower())
+            imperative_bonus = 1.5 if cleaned_sentence.lower().startswith(("contractor shall", "shall ", "must ")) else 0.0
             requirement_score = family_score + verb_score + imperative_bonus
             if not family_id or requirement_score < 2.75:
                 continue
-            normalized_text = canonicalize_requirement(sentence)
+            normalized_text = canonicalize_requirement(cleaned_sentence)
             dedupe_key = (section.notice_id, normalized_text)
             if dedupe_key in seen_keys:
                 continue
@@ -97,6 +98,7 @@ def extract_requirement_candidates(
                     section_id=section.section_id,
                     section_title=section.section_title,
                     raw_text=sentence,
+                    cleaned_text=cleaned_sentence,
                     normalized_text=normalized_text,
                     tokens=tokenize(normalized_text),
                     requirement_score=requirement_score,
