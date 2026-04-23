@@ -1,23 +1,28 @@
 # Federal Demand Primitive Engine
 
-Federal Demand Primitive Engine is a standalone repo scaffold hydrated from the KarpathyMerged materials.
+Federal Demand Primitive Engine is a narrow federal demand-analysis repo focused on extracting reusable requirement kernels from public solicitation artifacts.
+
+It starts with a `federal_spec_decompiler` wedge rather than a broad federal market-intelligence platform.
 
 ## Product Center
 
-The founding build is not the full merged concept.
-
-The repo must start as:
-- a narrower `federal_spec_decompiler` wedge
-
-That means:
+The founding loop is:
 1. ingest one narrow solicitation corpus
 2. extract recurring requirement kernels
 3. normalize them into reusable demand primitives
 4. expose evidence-backed outputs for product and venture decisions
 
-## Current Repo Status
+## Status
 
-This repo is a fresh scaffold for this product.
+Fresh scaffold.
+
+The current purpose of the repo is to establish:
+- founding docs
+- implementation guardrails
+- source and evidence boundaries
+- the intended repo shape for the first extraction loop
+
+No broad runnable product surface is expected yet.
 
 ## Canonical Build Truth
 
@@ -31,22 +36,21 @@ Treat these docs as authoritative:
 
 ## Planned Repo Shape
 
-- `configs/`
-  - source definitions, corpus selection rules, and rubric versions
-- `data/`
-  - raw pulls, snapshots, staging, and canonical data layers
-- `pipeline/`
-  - ingest, normalize, extract, score, and publish logic
-- `artifacts/`
-  - kernel payloads and site outputs
-- `apps/api/`
-  - thin API or orchestration surface when needed
-- `apps/web/`
-  - kernel explorer and evidence UI
-- `packages/shared/`
-  - shared contracts and schemas
+```text
+configs/         source definitions, corpus rules, and rubric versions
+data/            raw pulls, snapshots, staging, and canonical layers
+pipeline/        ingest, normalize, extract, score, and publish logic
+artifacts/       kernel payloads and site outputs
+apps/api/        thin API or orchestration surface when needed
+apps/web/        kernel explorer and evidence UI
+packages/shared/ shared contracts and schemas
+docs/            build truth and guardrails
+```
 
 ## Build Rule
 
-Do not attempt to build the full federal demand platform first.
-Build the decompiler wedge, prove the kernel extraction loop, then expand.
+Do not attempt to build the full federal demand platform first. Build the decompiler wedge, prove the kernel extraction loop, then expand.
+
+## License
+
+No open-source license has been selected yet. Public source visibility does not grant reuse rights until a license file is added.
